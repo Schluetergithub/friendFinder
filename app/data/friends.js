@@ -26,14 +26,14 @@ var users = {
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
             5,
-            1,
-            4,
-            4,
-            5,
-            1,
             2,
-            5,
             4,
+            5,
+            5,
+            1,
+            3,
+            5,
+            3,
             1
           ]
       },
@@ -41,14 +41,14 @@ var users = {
         name:Suzie,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
-            5,
-            1,
             4,
+            1,
+            1,
             4,
             5,
             1,
             2,
-            5,
+            1,
             4,
             1
           ]
@@ -57,14 +57,14 @@ var users = {
         name:Angel,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
-            5,
+            2,
             1,
             4,
             4,
-            5,
+            2,
             1,
             2,
-            5,
+            2,
             4,
             1
           ]
@@ -73,16 +73,16 @@ var users = {
         name:Joanna,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
+            4,
             5,
-            1,
             4,
             4,
             5,
-            1,
+            5,
             2,
-            5,
             4,
-            1
+            4,
+            5
           ]
       },
       {
@@ -90,28 +90,28 @@ var users = {
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
             5,
-            1,
+            5,
             4,
             4,
             5,
-            1,
-            2,
+            3,
+            3,
             5,
             4,
-            1
+            5
           ]
       },
       {
         name:Brittany,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
-            5,
+            1,
+            1,
             1,
             4,
-            4,
             5,
             1,
-            2,
+            1,
             5,
             4,
             1
@@ -121,15 +121,15 @@ var users = {
         name:Angela,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
+            3,
+            1,
+            3,
+            4,
             5,
             1,
-            4,
-            4,
+            3,
             5,
-            1,
-            2,
-            5,
-            4,
+            3,
             1
           ]
       },
@@ -137,16 +137,16 @@ var users = {
         name:Hillary,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
-            5,
-            1,
+            3,
+            2,
             4,
             4,
             5,
             1,
             2,
             5,
-            4,
-            1
+            2,
+            3
           ]
       },
       {
@@ -154,14 +154,14 @@ var users = {
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
             5,
-            1,
+            5,
             4,
             4,
             5,
-            1,
             2,
-            5,
-            4,
+            2,
+            1,
+            1,
             1
           ]
       },
@@ -170,15 +170,15 @@ var users = {
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
             5,
-            1,
             4,
             4,
-            5,
-            1,
+            4,
+            4,
+            4,
             2,
             5,
             4,
-            1
+            4
           ]
       }
                         ]};
