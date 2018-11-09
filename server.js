@@ -9,5 +9,12 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+const apiRoutes = require("./app/routing/apiRoutes")(app);
+// console.log(apiRoutes)
+require("./app/routing/htmlRoutes")(app);
+
+
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
+  

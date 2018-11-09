@@ -19,9 +19,9 @@ $.ajax({
     }
   });
 
-// make an object with an array to loop through the users
-var users = {
-    [{ 
+// make objects within an array to loop through the users
+var users = [
+    { 
         name: Sarah,
         photo:"https://adara.com/wp-content/uploads/2017/09/placeholder-woman.png",
         scores:[
@@ -181,5 +181,7 @@ var users = {
             4
           ]
       }
-                        ]};
+                        ];
+
+module.exports = users;
   
