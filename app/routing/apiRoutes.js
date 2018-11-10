@@ -3,10 +3,20 @@
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
+const friends = require('../data/friends');
 
-// var tableData = require("../data/tableData");
-// var waitListData = require("../data/waitinglistData");
 
+function compareScores(a, b) {
+  let totalDifference = 0;
+  for (let i = 0; i < a.length; i++) {
+    let difference = a[i] - b[i];
+    if (difference < 0) {
+      difference = difference * -1;
+    }
+    totalDifference = totalDifference + difference;
+  }
+  return totalDifference;
+}
 
 // ===============================================================================
 // ROUTING
@@ -19,9 +29,9 @@ module.exports = function(app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  return app.get("/api/friends", function(req, res) {
-    res.json({name: 'hi'});
-  });
+  // return app.get("/api/friends", function(req, res) {
+  //   res.json({name: 'hi'});
+  // });
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
@@ -35,14 +45,17 @@ module.exports = function(app) {
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body-parser middleware
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
+    const results = req.body.results;
+    let leastDifferentFriend;
+    let lowestDifference = 999999;
+    for (let i = 0; i < friends.length; i++) {
+      const totalDifference = compareScores(results, friends[i].scores);
+      if (totalDifference < lowestDifference) {
+        lowestDifference = totalDifference;
+        leastDifferentFriend = friends[i];
+      }
     }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
+    res.send({ name: leastDifferentFriend.name, photo: leastDifferentFriend.photo });
   });
 
 };

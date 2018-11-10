@@ -1,3 +1,12 @@
 body {
-    background-image: "../../heartbg.jpg"
+    /* background-image: "../../heartbg.jpg" */
+}
+
+#modal-image {
+    width: 100%;
+}
+
+#modal-text {
+    text-align: center;
+    margin-top: 10px;
 }
